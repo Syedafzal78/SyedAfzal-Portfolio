@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Syed Afzal — Neon Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- neon spotlight (follows mouse) -->
+  <div id="spotlight"></div>
+
+  <!-- HEADER / NAV -->
+  <header class="navbar">
+    <div class="container nav-flex">
+      <h2 class="logo">Syed Afzal</h2>
+
+      <nav id="navMenu" class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <!-- resume file path (uploaded) -->
+        <a class="resume-btn" href="https://drive.google.com/file/d/1AtfGHToIv9Q3eyU9-u77oIOQDfk_lJ09/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      </nav>
+
+      <button id="menuBtn" class="hamburger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+   <section class="hero">
+  <div class="container hero-grid">
+
+    <!-- LEFT -->
+    <div class="hero-left">
+      <h1 class="neon-heading">
+        Hello, I'm <span class="accent">Syed Afzal</span>
+      </h1>
+
+      <p class="subtitle">
+        Backend-Focused Java Full Stack Developer  
+        <br />
+        Specialist in Java • Spring Boot • React • REST APIs
+      </p>
+
+      <p class="hero-desc">
+        I build scalable, secure and production-ready backend systems using 
+        Java, Spring Boot, JPA/Hibernate, and PostgreSQL.  
+        Passionate about crafting 
+        clean API architectures.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#contact" class="btn neon-btn">Hire Me</a>
+        <a href="#projects" class="btn ghost-btn">See Projects</a>
+      </div>
+
+      <div class="badges">
+        <span class="chip">Java</span>
+        <span class="chip">Spring Boot</span>
+        <span class="chip">Spring Security</span>
+        <span class="chip">JPA • Hibernate</span>
+        <span class="chip">PostgreSQL</span>
+        <span class="chip">REST APIs</span>
+        <span class="chip">React</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-right">
+      <div class="photo-wrap pulse-glow">
+        <img id="profilePhoto" src="ProfilePhoto.jpg" alt="Syed Afzal"
+             onerror="this.style.display='none'; document.querySelector('.photo-fallback').style.display='flex'">
+        <div class="photo-fallback" aria-hidden="true">SA</div>
+      </div>
+      <div class="photo-caption">Software Engineer • Glenwood Systems</div>
+    </div>
+
+  </div>
+</section>
+ 
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2 class="title">About Me</h2>
+        <p> Focused Full Stack Developer with Nealy 3 years of experience in designing and developing enterprise applications. Proficient in Java, Spring Boot, REST APIs, 
+React, and PostgreSQL. Skilled in Spring Cloud, Spring Security, Hibernate, JPA, and AWS fundamentals. Focused on delivering high-performance 
+software, troubleshooting issues, and driving team collaboration.</p>
+      </div>
+    </section>
+
+  <section id="skills" class="section reveal">
+  <div class="container">
+    <h2 class="title">Skills</h2>
+    <div class="grid cards-grid">
+
+      <div class="card neon-card">
+        Frontend: HTML, CSS, JavaScript, React, Bootstrap, GWT (Basics)
+      </div>
+
+      <div class="card neon-card">
+        Backend: Java, Servlets, Spring, Spring MVC, Spring Boot, Spring Microservices, Spring Security, Spring Cloud, JPA, Hibernate ORM, Spring MVP , RESTful API Design & Development, Web Services, JSON
+      </div>
+
+      <div class="card neon-card">
+        Database: PostgreSQL, SQL Queries
+      </div>
+
+      <div class="card neon-card">
+        Tools: Git, Eclipse, Postman, AWS (Basics)
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- EXPERIENCE -->
+<section id="experience" class="section reveal">
+  <div class="container">
+    <h2 class="title">Experience</h2>
+    <div class="card tall neon-card">
+      <h3>Software Engineer — Glenwood Systems</h3>
+      <p class="muted">March 2023 – Present • Chennai</p>
+      <ul>
+        <li>Designed, developed, and deployed multiple healthcare application modules using Java, Spring Boot, and PostgreSQL.</li>
+        <li>Built and maintained scalable backend services using Spring MVC, REST APIs, JPA, and Hibernate.</li>
+        <li>Implemented API Gateway, load balancing, and service discovery using Spring Cloud for microservices communication.</li>
+        <li>Developed secure backend APIs integrating frontend systems and third-party services, ensuring HIPAA-compliant data handling.</li>
+        <li>Optimized SQL queries and Hibernate configurations to improve database performance and reduce latency.</li>
+        <li>Identified and resolved production issues across environments, improving system stability and uptime.</li>
+        <li>Mentored junior developers and promoted clean code practices to enhance overall code quality.</li>
+        <li>Built an AI-powered medical transcription system using AWS Transcribe + GPT models to generate structured clinical data (HPI, CC, ROS, PE, History).</li>
+        <li>Designed and implemented a secure payment gateway integrating Rectangle Health and InstaMed using Spring Boot, RestTemplate, and HttpEntity with strong authentication and encryption.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
+  <div class="container">
+    <h2 class="title">Projects</h2>
+    <div class="grid cards-grid">
+
+      <div class="card neon-card">
+        <h3>GlaceEMR</h3>
+        <p>
+          Contributed to core EMR modules for a large-scale healthcare platform. 
+          Built and optimized RESTful APIs, improved system performance through 
+          refactoring, caching, and optimized SQL queries. Implemented secure data 
+          handling and access control using Spring Security to ensure HIPAA 
+          compliance. Collaborated with cross-functional teams to deliver scalable, 
+          reliable EMR features.
+        </p>
+      </div>
+
+      <div class="card neon-card">
+        <h3>Glace Scribe AI</h3>
+        <p>
+          Developed an AI-powered medical transcription system to convert 
+          doctor-patient conversations into structured clinical data. Integrated 
+          AWS Transcribe for real-time speech-to-text and used GPT-4 to extract 
+          HPI, CC, ROS, PE, Plan, and Patient History. Built secure, scalable 
+          Spring Boot services and REST APIs to process, store, and manage 
+          generated clinical information while maintaining HIPAA compliance.
+        </p>
+      </div>
+
+      <div class="card neon-card">
+        <h3>Payment Gateway</h3>
+        <p>
+          Designed and implemented a secure Payment Gateway using Java and Spring 
+          Boot. Integrated Rectangle Health and InstaMed through encrypted REST 
+          APIs. Developed controllers, service layers, and authentication flows 
+          using API keys, secrets, and token-based security. Performed workflow 
+          validation and testing to ensure accurate and reliable online payment 
+          processing.
+        </p>
+      </div>
+
+      <div class="card neon-card">
+        <h3>Clearinghouse</h3>
+        <p>
+          Built and optimized backend modules to fetch and process insurance 
+          eligibility data from multiple third-party sources. Implemented robust 
+          API integrations with strong error handling and logging. Improved data 
+          synchronization efficiency by 20%, reducing manual verification time for 
+          healthcare staff while increasing reliability of eligibility checks.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+   <!-- EDUCATION -->
+<section id="education" class="section reveal">
+  <div class="container">
+    <h2 class="title">Education</h2>
+    <div class="grid cards-grid">
+
+      <div class="card neon-card">
+        <h3>B.E. in Computer Science</h3>
+        <p>
+          Aalim Muhammad Salegh College of Engineering • Chennai • 2023 • 8.54 CGPA
+        </p>
+      </div>
+
+      <div class="card neon-card">
+        <h3>MBA in Operations Management</h3>
+        <p>
+          Indira Gandhi National Open University (IGNOU) • Ongoing • 2026
+        </p>
+      </div>
+
+      <div class="card neon-card">
+        <h3>Certification</h3>
+        <p>
+          Java Full Stack Development — Besant Technologies
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+  <div class="container">
+    <h2 class="title">Contact</h2>
+    <div class="card neon-card">
+      <p><strong>Location:</strong> Chennai, Tamil Nadu, India</p>
+      <p><strong>Email:</strong> <a href="mailto:afzalprogramming@gmail.com">afzalprogramming@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+919360479341">9360479341</a></p>
+      <p><strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/syed-afzal-f-342340218/" target="_blank">
+          syed-afzal-f-342340218
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
